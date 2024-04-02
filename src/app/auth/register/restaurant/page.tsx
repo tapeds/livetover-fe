@@ -2,7 +2,7 @@
 
 import { FormProvider, useForm } from 'react-hook-form';
 
-import Button from '@/components/Button';
+import Button from '@/components/buttons/Button';
 import Input from '@/components/Input';
 import NextImage from '@/components/NextImage';
 
