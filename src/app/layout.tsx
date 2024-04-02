@@ -1,9 +1,9 @@
 import './globals.css';
 
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] });
+import clsxm from '@/lib/clsxm';
+import { LemonMilk, poppins } from '@/lib/font';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -17,7 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={inter.className}>{children}</body>
+      <body className={clsxm(poppins.variable, LemonMilk.variable)}>
+        {children}
+      </body>
     </html>
   );
 }

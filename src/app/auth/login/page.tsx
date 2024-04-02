@@ -15,14 +15,14 @@ export default function Auth() {
           />
         </div>
         <div className='flex flex-col items-center justify-center'>
-          <h1 className='text-brown-1 text-5xl font-bold leading-[75px]'>
-            Register as:
+          <h1 className='text-brown-1 font-poppins text-5xl font-bold leading-[75px]'>
+            Login as:
           </h1>
           <div className='mt-10 flex flex-col gap-8 md:mt-20 lg:flex-row lg:gap-16'>
             <Button>Restaurant</Button>
             <Button>Customer</Button>
           </div>
-          <p className='text-brown-1 mt-5 text-center text-lg font-medium leading-7 md:mt-10'>
+          <p className='text-brown-1 font-lemonMilk mt-5 text-center text-lg font-medium leading-7 md:mt-10'>
             DONT HAVE AN ACCOUNT? <br className='md:hidden' />
             <span className='text-brown-2'>REGISTER HERE</span>
           </p>

@@ -15,7 +15,7 @@ export default function Auth() {
           />
         </div>
         <div className='flex flex-col items-center justify-center gap-10 md:gap-20'>
-          <h1 className='text-brown-1 text-5xl font-bold leading-[75px]'>
+          <h1 className='text-brown-1 font-poppins text-5xl font-bold leading-[75px]'>
             Register as:
           </h1>
           <div className='flex flex-col gap-8 lg:flex-row lg:gap-16'>
