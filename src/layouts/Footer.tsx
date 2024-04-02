@@ -12,7 +12,7 @@ export default function Footer() {
             height={92}
             className='w-[300px] max-[365px]:w-[200px] md:w-[456px]'
           />
-          <ul className='text-typo-white flex flex-col gap-4 font-lemonMilk text-base *:leading-6 md:items-end'>
+          <ul className='flex flex-col gap-4 font-lemonMilk text-base text-typo-white *:leading-6 md:items-end'>
             <li className='font-bold'>QUICK LINKS</li>
             <li>HOME</li>
             <li>LOGIN</li>
@@ -20,7 +20,7 @@ export default function Footer() {
           </ul>
         </div>
         <div className='flex items-center justify-center pt-10'>
-          <p className='text-typo-white font-lemonMilk text-sm'>
+          <p className='font-lemonMilk text-sm text-typo-white'>
             © lorem ipsum abdsjncsanclsk
           </p>
         </div>

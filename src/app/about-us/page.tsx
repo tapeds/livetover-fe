@@ -4,7 +4,7 @@ import Layout from '@/layouts/Layout';
 export default function AboutUs() {
   return (
     <Layout withFooter>
-      <main className='bg-green-1 relative flex min-h-screen items-center justify-center overflow-hidden'>
+      <main className='relative flex min-h-screen items-center justify-center overflow-hidden bg-green-1'>
         <div className='flex flex-col items-center justify-end gap-10 px-10 py-20 md:gap-6 md:px-24'>
           <h1 className='text-center font-poppins text-4xl font-bold md:px-24 md:text-[80px] md:leading-[120px]'>
             Tentang Kami
