@@ -24,7 +24,7 @@ export default function Input({
     <div className='flex flex-col gap-1.5'>
       <label
         htmlFor='email'
-        className='font-poppins text-brown-1 text-lg font-bold'
+        className='font-poppins text-lg font-bold text-brown-1'
       >
         {label}
       </label>
@@ -36,7 +36,7 @@ export default function Input({
             type === 'password' ? (showPassword ? 'text' : 'password') : type
           }
           className={clsxm(
-            'border-brown-1 w-full rounded-md border-2 bg-transparent px-4 py-4 caret-black',
+            'w-full rounded-md border-2 border-brown-1 bg-transparent px-4 py-4 caret-black',
             error && 'border-red-500',
           )}
           {...register(id, validation)}
@@ -46,7 +46,7 @@ export default function Input({
             className={clsxm(
               'absolute bottom-0 right-0 h-full hover:cursor-pointer',
               'flex items-center justify-center pr-3',
-              'text-brown-1 text-lg md:text-xl',
+              'text-lg text-brown-1 md:text-xl',
             )}
             onClick={() => setShowPassword(!showPassword)}
           >

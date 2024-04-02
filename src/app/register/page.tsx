@@ -3,9 +3,9 @@ import NextImage from '@/components/NextImage';
 
 export default function Auth() {
   return (
-    <main className='bg-cream-2 flex min-h-screen items-center justify-center'>
+    <main className='flex min-h-screen items-center justify-center bg-cream-2'>
       <div className='flex flex-col items-center justify-center gap-5 md:gap-10'>
-        <div className='bg-pink-4 rounded-[49px] px-12 pb-7 pt-5'>
+        <div className='rounded-[49px] bg-pink-4 px-12 pb-7 pt-5'>
           <NextImage
             src='/logo.svg'
             alt='logo'
@@ -15,7 +15,7 @@ export default function Auth() {
           />
         </div>
         <div className='flex flex-col items-center justify-center'>
-          <h1 className='text-brown-1 font-poppins text-5xl font-bold leading-[75px]'>
+          <h1 className='font-poppins text-5xl font-bold leading-[75px] text-brown-1'>
             Register as:
           </h1>
           <div className='mt-10 flex flex-col gap-8 md:mt-20 lg:flex-row lg:gap-16'>
