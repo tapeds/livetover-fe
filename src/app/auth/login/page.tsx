@@ -1,17 +1,17 @@
-import Button from '@/app/auth/components/Button';
+import ButtonLink from '@/components/ButtonLink';
 import NextImage from '@/components/NextImage';
 
 export default function Auth() {
   return (
     <main className='bg-cream-2 flex min-h-screen items-center justify-center'>
       <div className='flex flex-col items-center justify-center gap-5 md:gap-10'>
-        <div className='bg-pink-4 rounded-[49px] px-14 pb-7 pt-5'>
+        <div className='bg-pink-4 rounded-[49px] px-12 pb-7 pt-5'>
           <NextImage
             src='/logo.svg'
             alt='logo'
             width={418}
             height={85}
-            className='w-[200px] md:w-[318]'
+            className='w-[200px] md:w-[318px]'
           />
         </div>
         <div className='flex flex-col items-center justify-center'>
@@ -19,8 +19,12 @@ export default function Auth() {
             Login as:
           </h1>
           <div className='mt-10 flex flex-col gap-8 md:mt-20 lg:flex-row lg:gap-16'>
-            <Button>Restaurant</Button>
-            <Button>Customer</Button>
+            <ButtonLink href='/auth/login/restaurant' className='h-[82px]'>
+              Restaurant
+            </ButtonLink>
+            <ButtonLink href='/auth/login/customer' className='h-[82px]'>
+              Customer
+            </ButtonLink>
           </div>
           <p className='text-brown-1 font-lemonMilk mt-5 text-center text-lg font-medium leading-7 md:mt-10'>
             DONT HAVE AN ACCOUNT? <br className='md:hidden' />
