@@ -13,6 +13,22 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      fontFamily: {
+        poppins: ['var(--font-poppins)'],
+        lemonMilk: ['var(--font-lemonMilk)'],
+      },
+      colors: {
+        cream: {
+          2: '#E6D9CA',
+        },
+        pink: {
+          4: '#E4C0AF',
+        },
+        brown: {
+          1: '#4E372B',
+          2: '#B25036',
+        },
+      },
     },
   },
   plugins: [],
