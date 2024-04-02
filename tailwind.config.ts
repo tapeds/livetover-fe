@@ -5,6 +5,7 @@ const config: Config = {
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/layouts/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
@@ -27,6 +28,12 @@ const config: Config = {
         brown: {
           1: '#4E372B',
           2: '#B25036',
+        },
+        typo: {
+          white: '#F9F9FA',
+        },
+        green: {
+          1: '#6A7048',
         },
       },
     },
