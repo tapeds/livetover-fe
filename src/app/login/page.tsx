@@ -19,10 +19,10 @@ export default function Auth() {
             Login as:
           </h1>
           <div className='mt-10 flex flex-col gap-8 md:mt-20 lg:flex-row lg:gap-16'>
-            <ButtonLink href='/auth/login/restaurant' className='h-[82px]'>
+            <ButtonLink href='/login/restaurant' className='h-[82px]'>
               Restaurant
             </ButtonLink>
-            <ButtonLink href='/auth/login/customer' className='h-[82px]'>
+            <ButtonLink href='/login/customer' className='h-[82px]'>
               Customer
             </ButtonLink>
           </div>

@@ -3,8 +3,8 @@ import NextImage from '@/components/NextImage';
 export default function Footer() {
   return (
     <footer className='z-[100] w-full bg-brown-1'>
-      <div className='flex flex-col divide-y-2 divide-white/20 px-10 py-9 pb-14 md:px-20 md:pb-28 lg:px-44'>
-        <div className='mb-20 flex flex-col justify-between max-md:gap-10 md:mb-40 md:flex-row'>
+      <div className='flex flex-col divide-y-2 divide-white/20 px-10 py-9 pb-14 md:px-20 lg:px-44'>
+        <div className='mb-20 flex flex-col justify-between max-md:gap-10 md:mb-20 md:flex-row'>
           <NextImage
             src='/logowhite.svg'
             alt='logo'
