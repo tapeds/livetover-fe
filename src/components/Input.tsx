@@ -36,7 +36,7 @@ export default function Input({
             type === 'password' ? (showPassword ? 'text' : 'password') : type
           }
           className={clsxm(
-            'w-full rounded-md border-2 border-brown-1 bg-transparent px-4 py-4 caret-black',
+            'w-full rounded-md border-2 border-brown-1 bg-transparent px-4 py-4 text-black caret-black',
             error && 'border-red-500',
           )}
           {...register(id, validation)}

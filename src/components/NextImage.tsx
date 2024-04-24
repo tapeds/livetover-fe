@@ -1,22 +1,10 @@
 'use client';
 
-import Image, { ImageProps } from 'next/image';
+import Image from 'next/image';
 import * as React from 'react';
 
 import clsxm from '@/lib/clsxm';
-
-type NextImageProps = {
-  useSkeleton?: boolean;
-  imgClassName?: string;
-  serverStaticImg?: boolean;
-  blurClassName?: string;
-  alt: string;
-  width: string | number;
-} & (
-  | { width: string | number; height: string | number }
-  | { layout: 'fill'; width?: string | number; height?: string | number }
-) &
-  ImageProps;
+import { NextImageProps } from '@/types/image';
 
 /**
  *

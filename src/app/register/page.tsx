@@ -19,10 +19,10 @@ export default function Auth() {
             Register as:
           </h1>
           <div className='mt-10 flex flex-col gap-8 md:mt-20 lg:flex-row lg:gap-16'>
-            <ButtonLink href='/auth/register/restaurant' className='h-[82px]'>
+            <ButtonLink href='/register/restaurant' className='h-[82px]'>
               Restaurant
             </ButtonLink>
-            <ButtonLink href='/auth/register/customer' className='h-[82px]'>
+            <ButtonLink href='/register/customer' className='h-[82px]'>
               Customer
             </ButtonLink>
           </div>
