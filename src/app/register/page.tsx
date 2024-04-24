@@ -1,5 +1,11 @@
+import { Metadata } from 'next';
+
 import ButtonLink from '@/components/buttons/ButtonLink';
 import NextImage from '@/components/NextImage';
+
+export const metadata: Metadata = {
+  title: 'Register',
+};
 
 export default function Auth() {
   return (

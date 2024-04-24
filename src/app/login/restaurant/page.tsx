@@ -1,13 +1,13 @@
-'use client';
+import { Metadata } from 'next';
 
-import { FormProvider, useForm } from 'react-hook-form';
-
-import Button from '@/components/buttons/Button';
-import Input from '@/components/Input';
+import LoginForm from '@/app/login/LoginForm';
 import NextImage from '@/components/NextImage';
 
-export default function CustomerLogin() {
-  const methods = useForm();
+export const metadata: Metadata = {
+  title: 'Login Restaurant',
+};
+
+export default function RestaurantLogin() {
   return (
     <main className='flex min-h-screen items-center justify-center overflow-hidden bg-cream-2'>
       <div className='relative flex h-screen w-screen basis-1/2 items-center justify-center bg-[url("/images/loginbg.png")] bg-cover max-lg:hidden'>
@@ -30,13 +30,7 @@ export default function CustomerLogin() {
               className='absolute -right-9 top-0 z-0 w-[60px] md:-right-16 md:-top-14 md:w-[123px]'
             />
           </div>
-          <FormProvider {...methods}>
-            <form className='flex w-[300px] flex-col gap-6 max-[300px]:w-[200px] sm:w-[400px] min-[1300px]:w-[500px]'>
-              <Input id='email' label='Email' />
-              <Input id='password' label='Password' />
-              <Button>Login</Button>
-            </form>
-          </FormProvider>
+          <LoginForm userRole='konsumen' />
         </div>
       </div>
     </main>
