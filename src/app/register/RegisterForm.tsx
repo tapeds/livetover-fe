@@ -60,6 +60,7 @@ export default function RegisterForm({
               message: 'Invalid email address',
             },
           }}
+          placeholder='Enter your email'
         />
         <Input
           id='password'
@@ -72,31 +73,35 @@ export default function RegisterForm({
               message: 'Password must be at least 8 characters',
             },
           }}
+          placeholder='Enter your password'
         />
         {userRole === 'konsumen' && (
           <Input
             id='nama'
-            label='Nama'
+            label='Name'
             validation={{
               required: 'Nama is required',
             }}
+            placeholder='Enter your name'
           />
         )}
         {userRole === 'restoran' && (
           <>
             <Input
               id='nama'
-              label='Nama Instansi'
+              label='Restaurant Name'
               validation={{
                 required: 'Nama instansi is required',
               }}
+              placeholder='Enter your restaurant name'
             />
             <Input
               id='alamat'
-              label='Alamat'
+              label='Address'
               validation={{
                 required: 'Alamat is required',
               }}
+              placeholder='Enter your restaurant address'
             />
           </>
         )}

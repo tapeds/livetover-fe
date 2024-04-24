@@ -58,6 +58,7 @@ export default function LoginForm({
               message: 'Invalid email address',
             },
           }}
+          placeholder='Enter your email'
         />
         <Input
           id='password'
@@ -69,6 +70,7 @@ export default function LoginForm({
               message: 'Password must be at least 6 characters',
             },
           }}
+          placeholder='Enter your password'
           type='password'
         />
         <Button type='submit'>Login</Button>
