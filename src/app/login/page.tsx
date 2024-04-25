@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 
 import ButtonLink from '@/components/buttons/ButtonLink';
 import NextImage from '@/components/NextImage';
+import UnstyledLink from '@/components/UnstyledLink';
 
 export const metadata: Metadata = {
   title: 'Login',
@@ -34,7 +35,9 @@ export default function Auth() {
           </div>
           <p className='mt-5 text-center font-lemonMilk text-lg font-medium leading-7 text-brown-1 md:mt-10'>
             DONT HAVE AN ACCOUNT? <br className='md:hidden' />
-            <span className='text-brown-2'>REGISTER HERE</span>
+            <UnstyledLink href='/register' className='text-brown-2'>
+              REGISTER HERE
+            </UnstyledLink>
           </p>
         </div>
       </div>
