@@ -31,7 +31,7 @@ export default function LoginForm({
     },
     onSuccess: () => {
       toast.success('Login success');
-      router.push('/dashboard');
+      router.push('/');
     },
     onError: (error) => {
       toast.error(error.response?.data.message || 'An error occurred');
