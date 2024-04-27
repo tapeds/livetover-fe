@@ -56,7 +56,7 @@ export function Navbar() {
           {/* Navbar Desktop */}
           <nav className='hidden lg:block'>
             <ul className='flex flex-row items-center justify-between gap-3 text-base xl:gap-6 '>
-              <li>
+              <li className='decoration-brown-1 decoration-2 hover:underline'>
                 <Link href='/about-us'>
                   <h1 className='font-lemonMilk text-[18px] font-medium '>
                     Tentang Kami
@@ -64,7 +64,7 @@ export function Navbar() {
                 </Link>
               </li>
 
-              <li>
+              <li className='decoration-brown-1 decoration-2 hover:underline'>
                 <Link href='/#todaysoffer'>
                   <h1 className='font-lemonMilk text-[18px] font-medium'>
                     Today&#x27;s Offers
@@ -72,7 +72,7 @@ export function Navbar() {
                 </Link>
               </li>
 
-              <li>
+              <li className='decoration-brown-1 decoration-2 hover:underline'>
                 <Link href='/'>
                   <h1 className='font-lemonMilk text-[18px] font-medium'>
                     Home
@@ -137,6 +137,23 @@ export function Navbar() {
               </div>
             </ul>
           </nav>
+          {cookie ? (
+            <button>
+              <div className='align-center flex flex-row items-center justify-center gap-3'>
+                <CgProfile className='text-5xl text-brown-1' />
+                <h1 className='hidden justify-center font-lemonMilk text-[18px] font-medium lg:block'>
+                  {' '}
+                  Your Name
+                </h1>
+              </div>
+            </button>
+          ) : (
+            <Link href='/login'>
+              <button className='w-[122px] rounded-lg bg-brown-1 py-2 font-poppins text-lg font-semibold text-white'>
+                Login
+              </button>
+            </Link>
+          )}
 
           <button
             className='rounded-full border border-brown-1 bg-brown-1 p-2 hover:bg-brown-2'
