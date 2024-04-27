@@ -2,10 +2,11 @@
 
 import React from 'react';
 import Link from 'next/link';
-import clsxm from '../lib/clsxm';
+import clsxm from '@/lib/clsxm';
 import { useState } from 'react';
-import NextImage from './NextImage';
+import NextImage from '@/components/NextImage';
 import { CgMenu, CgClose, CgProfile } from 'react-icons/cg';
+import { getToken } from '@/lib/cookies';
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -18,35 +19,45 @@ export function Navbar() {
     setIsOpen(false);
   };
 
+  const cookie = getToken();
+
   return (
     <>
-      <header className='sticky top-0 z-[100] w-full bg-cream-2 text-brown-1'>
-        <div className='layout flex h-16 flex-row items-center justify-between px-2 md:h-20 lg:px-14'>
-          <button>
-            <div className='align-center flex flex-row items-center justify-center gap-3'>
-              <CgProfile className='text-5xl text-brown-1' />
-              <h1 className='hidden justify-center font-lemonMilk text-[18px] font-medium lg:block'>
-                {' '}
-                Your Name
-              </h1>
-            </div>
-          </button>
+      <header className='fixed top-0 z-[100] w-full bg-cream-2 text-brown-1'>
+        <div className='layout relative flex h-16 flex-row items-center justify-between px-10 text-center md:h-20 lg:px-14'>
+          {cookie ? (
+            <button className='max-lg:hidden'>
+              <div className='align-center flex flex-row items-center justify-center gap-3'>
+                <CgProfile className='text-5xl text-brown-1' />
+                <h1 className='hidden justify-center font-lemonMilk text-[18px] font-medium lg:block'>
+                  {' '}
+                  Your Name
+                </h1>
+              </div>
+            </button>
+          ) : (
+            <Link href='/login' className='max-lg:hidden'>
+              <button className='w-[122px] rounded-lg bg-brown-1 py-2 font-poppins text-lg font-semibold text-white'>
+                Login
+              </button>
+            </Link>
+          )}
 
-          <Link href='/' className='flex flex-row items-center gap-2 md:gap-4'>
+          <Link href='/' className='flex items-center'>
             <NextImage
               src='/logo.svg'
               alt='logo'
               width={186}
               height={38}
-              className='max-w-full'
+              className='absolute mx-auto max-w-full'
             />
           </Link>
 
           {/* Navbar Desktop */}
           <nav className='hidden lg:block'>
-            <ul className='flex flex-row items-center justify-between gap-6 text-base '>
+            <ul className='flex flex-row items-center justify-between gap-3 text-base xl:gap-6 '>
               <li>
-                <Link href=''>
+                <Link href='/about-us'>
                   <h1 className='font-lemonMilk text-[18px] font-medium '>
                     Tentang Kami
                   </h1>
@@ -54,7 +65,7 @@ export function Navbar() {
               </li>
 
               <li>
-                <Link href=''>
+                <Link href='/#todaysoffer'>
                   <h1 className='font-lemonMilk text-[18px] font-medium'>
                     Today&#x27;s Offers
                   </h1>
@@ -62,7 +73,7 @@ export function Navbar() {
               </li>
 
               <li>
-                <Link href=''>
+                <Link href='/'>
                   <h1 className='font-lemonMilk text-[18px] font-medium'>
                     Home
                   </h1>
@@ -101,7 +112,7 @@ export function Navbar() {
             <ul className='space-y-4'>
               <div className='w-full space-y-4 p-2.5 text-base'>
                 <li>
-                  <Link href='' onClick={closeNav}>
+                  <Link href='/about-us' onClick={closeNav}>
                     <h1 className='font-lemonMilk text-[18px] font-medium '>
                       Tentang Kami
                     </h1>
@@ -109,7 +120,7 @@ export function Navbar() {
                 </li>
 
                 <li>
-                  <Link href='' onClick={closeNav}>
+                  <Link href='/#todaysoffer' onClick={closeNav}>
                     <h1 className='font-lemonMilk text-[18px] font-medium'>
                       Today&#x27;s Offers
                     </h1>
@@ -117,7 +128,7 @@ export function Navbar() {
                 </li>
 
                 <li>
-                  <Link href='' onClick={closeNav}>
+                  <Link href='/' onClick={closeNav}>
                     <h1 className='font-lemonMilk text-[18px] font-medium'>
                       Home
                     </h1>
