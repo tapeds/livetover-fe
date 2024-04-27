@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://livetover.vercel.app/
+
+# Sitemaps
+Sitemap: https://livetover.vercel.app/sitemap.xml
