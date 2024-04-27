@@ -1,5 +1,10 @@
 import NextImage from '@/components/NextImage';
 import Layout from '@/layouts/Layout';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'About us',
+};
 
 export default function AboutUs() {
   return (
