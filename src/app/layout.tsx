@@ -15,6 +15,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
   },
+  metadataBase: new URL('https://livetover.vercel.app'),
 };
 
 export default function RootLayout({

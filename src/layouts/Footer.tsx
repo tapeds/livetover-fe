@@ -20,9 +20,7 @@ export default function Footer() {
           </ul>
         </div>
         <div className='flex items-center justify-center pt-10'>
-          <p className='font-lemonMilk text-sm text-typo-white'>
-            © lorem ipsum abdsjncsanclsk
-          </p>
+          <p className='font-lemonMilk text-sm text-typo-white'>© Livetover</p>
         </div>
       </div>
     </footer>
