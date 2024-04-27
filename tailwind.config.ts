@@ -35,6 +35,13 @@ const config: Config = {
         green: {
           1: '#6A7048',
         },
+        orange: {
+          1: '#D5994C',
+        },
+
+        minHeight: {
+          '900': '972px',
+        },
       },
     },
   },

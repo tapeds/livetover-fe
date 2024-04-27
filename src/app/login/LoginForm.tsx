@@ -11,6 +11,7 @@ import Button from '@/components/buttons/Button';
 import Input from '@/components/Input';
 import api from '@/lib/api';
 import { LoginProps } from '@/types/auth';
+import { setToken } from '@/lib/cookies';
 
 export default function LoginForm({
   userRole,
@@ -29,9 +30,10 @@ export default function LoginForm({
     mutationFn: async (data) => {
       return api.post(`/${userRole}/login`, data);
     },
-    onSuccess: () => {
+    onSuccess: (data) => {
       toast.success('Login success');
-      router.push('/dashboard');
+      setToken(data.data.data.token);
+      router.push('/');
     },
     onError: (error) => {
       toast.error(error.response?.data.message || 'An error occurred');
