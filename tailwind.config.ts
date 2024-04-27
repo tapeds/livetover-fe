@@ -38,6 +38,10 @@ const config: Config = {
         orange: {
           1: '#D5994C',
         },
+
+        minHeight: {
+          '900': '972px',
+        },
       },
     },
   },
