@@ -1,4 +1,5 @@
 import NextImage from '@/components/NextImage';
+import UnstyledLink from '@/components/UnstyledLink';
 
 export default function Footer() {
   return (
@@ -14,9 +15,15 @@ export default function Footer() {
           />
           <ul className='flex flex-col gap-4 font-lemonMilk text-base text-typo-white *:leading-6 md:items-end'>
             <li className='font-bold'>QUICK LINKS</li>
-            <li>HOME</li>
-            <li>LOGIN</li>
-            <li>REGISTER</li>
+            <UnstyledLink href='/'>
+              <li>HOME</li>
+            </UnstyledLink>
+            <UnstyledLink href='/login'>
+              <li>LOGIN</li>
+            </UnstyledLink>
+            <UnstyledLink href='/register'>
+              <li>REGISTER</li>
+            </UnstyledLink>
           </ul>
         </div>
         <div className='flex items-center justify-center pt-10'>
