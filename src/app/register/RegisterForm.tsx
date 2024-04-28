@@ -31,8 +31,8 @@ export default function RegisterForm({
     },
     onSuccess: () => {
       toast.success('Register success');
-      if (userRole === 'konsumen') router.push('/login/restaurant');
-      else router.push('/login/customer');
+      if (userRole === 'konsumen') router.push('/login/customer');
+      else router.push('/login/restaurant');
     },
     onError: (error) => {
       toast.error(error.response?.data.message || 'An error occurred');

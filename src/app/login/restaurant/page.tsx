@@ -30,7 +30,7 @@ export default function RestaurantLogin() {
               className='absolute -right-9 top-0 z-0 w-[60px] md:-right-16 md:-top-14 md:w-[123px]'
             />
           </div>
-          <LoginForm userRole='konsumen' />
+          <LoginForm userRole='restoran' />
         </div>
       </div>
     </main>
